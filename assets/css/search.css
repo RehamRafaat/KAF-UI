@@ -1,0 +1,19 @@
+.photo{
+    width: 205px;
+    height: 205px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #c94747;
+    background-color: white;
+}
+.nav-stacked>li.active>a, .nav-stacked>li.active>a:hover {
+    border-left-color: white;
+}
+.box .nav-stacked>li {
+    border-bottom: 0px none; 
+}

@@ -57,10 +57,10 @@ option{
 /********************************************* hero section ***************************************/
 /******* nav *********/
 .navbar{
-    background-color:rgba(44, 39, 39, 0.342);
+    background-color:#233142;
     padding: 7px;
     height: 85px;
-    border-color:rgba(44, 39, 39, 0.342);
+    border-color:#233142;
 }
 .navbar-brand{
     color: white;
@@ -75,6 +75,7 @@ option{
 .dropdown-menu>li>a {
     color: white;
     background-color:#facf5a;
+    cursor: pointer;
 }
 .dropdown-menu>li>a:hover{
     color:white;
@@ -103,7 +104,8 @@ option{
     border-right: #595d62;
     border-right-style: solid;
     border-right-width: thin;
-    line-height: 2px;
+    line-height:3px;
+    cursor: pointer;
 }
 .navbar-default .navbar-nav>li>a {
     color:whitesmoke;
@@ -115,7 +117,8 @@ option{
     border-right: #595d62;
     border-right-style: solid;
     border-right-width: thin;
-    line-height: 2px;
+    line-height: 3px;
+    cursor: pointer;
 }
 .navbar-default .navbar-nav>li>a:hover {
     color:#facf5a;
@@ -130,7 +133,7 @@ option{
     height: 67px;
 }
 .navbar-fixed-top.scrolled {
-    background-color:#233142; !important;
+    background-color:#233142 !important;
     transition: background-color 200ms linear;
 }
 .navbar-default.scrolled .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
@@ -161,7 +164,7 @@ option{
 .navbar-brand img {
     width: 90px;
     height: 56px;
-    margin-top:-10px;
+    margin-top:-20px;
 }
 .nav>li>a {
     position: relative;
@@ -183,6 +186,11 @@ option{
     color: #333;
     background-color: #facf5a;
     border-color: #ccc;
+}
+.navbar-collapse{
+    border-color: #e7e7e7;
+    background-color: #233142;
+    text-align: center;
 }
 /************* end nav style ******************/
 
@@ -207,24 +215,8 @@ option{
         background-image: url(../img/cover5.jpg);
    }
 }
-.intro h1{
-    text-align: center;
-    color:white;
-    font-size: 100px;
-    position: relative;
-    text-shadow: 6px 6px 6px black;
-    display: none;
-    -webkit-animation: welcome 1s 1;
-   /* Safari 4.0 - 8.0 */
-    animation: welcome 1s 1;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    font-family: 'Muli', sans-serif;
-    line-height: 1.2;
-    margin-bottom: 13px;
-    white-space: pre-line;
-    word-wrap: break-word;
-    margin-top: 155px;
+.intro h2{
+    text-align: center; font-size: 35px; color: #ffffff;position: relative;top: 200px; margin-bottom: -60px; z-index: 200;
 }
 .intro p{
     text-align: center;
@@ -341,27 +333,8 @@ option{
 
 /************************************************** Responsive ************************************/
 @media only screen and (max-width: 600px) {
-    .intro h1{
-        font-size: 60px;
-   }
-    .intro p{
-        font-size: 30px;
-   }
-    @keyframes welcome {
-        from {
-            font-size:0px;
-       }
-        to {
-            font-size:60px;
-       }
-   }
-    @keyframes hthree {
-        from {
-            visibility: hidden;
-       }
-        to {
-            visibility:visible;
-       }
+    .intro h2{
+        font-size: 22px;
    }
     .btn{
         padding:10px 15px 10px 15px;
@@ -388,8 +361,14 @@ option{
         height: 150px;
         margin-bottom: 30px;
    }
+   .form-control{
+    margin-top: 20px;
+    margin: 0 auto;
+    width: 300px;
+   }
+   
 }
-@media only screen and (max-width: 765px) {
+@media only screen and (min-width: 765px) {
     .gang{
         margin-bottom: 30px;
    }
@@ -398,6 +377,9 @@ option{
    }
 }
 @media only screen and (max-width: 769px) {
+    .intro h2{
+        font-size: 22px;
+   }
     .gang{
         margin-bottom: 30px;
    }
@@ -435,7 +417,7 @@ option{
 @media only screen and (min-width: 900px) {
     .gang-pic{
         margin-left: 70px;
-   }
+   
    }
 }
 @media only screen and (min-width: 1100px) {
