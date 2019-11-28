@@ -25,18 +25,37 @@
    font-weight: bold;
    float: right;
 }
+#sec3 h2,p{
+    text-align: left;
+}
 ::placeholder {
     color: #54617d;
     opacity: 1; /* Firefox */
   }
+  .ano{
+    background-image: url(../img/parts/cont.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+      height: 550px;
+      margin-top: 130px;
+      display: block;
+}
 @media only screen and (min-width: 900px) {
     .form-control{
         margin-left: -20px;
     }
 }
 @media only screen and (max-width: 800px) {
-    h2,p{
+    #sec3 h2,p{
         text-align: center;
+    }
+    .ano{
+          display:none;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .ano{
+          display:none;
     }
 }
 

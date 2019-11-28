@@ -107,8 +107,8 @@
                                                 <li><a href="knowledge.html">Knowledge</a></li>
                                                 <li><a href="support.html">Support</a></li>
                                                 <li><a href="contact_us.html">Contact Us</a></li>
-                                            <li><a href="#about"><span class="glyphicon glyphicon-user" aria-hidden="true" style="border-right-style:none"></span>Login</a></li>
-                                            <li><a><button data-toggle="modal" data-target="#myModal" class=" btn btn-default">Sign up</button></a></li>
+                                            <li><a data-toggle="modal" data-target="#razik2" ><span class="glyphicon glyphicon-user" aria-hidden="true" style="border-right-style:none"></span>Login</a></li>
+                                            <li><a><button data-toggle="modal" data-target="#razik" class=" btn btn-default">Sign up</button></a></li>
                                             <li><a href="search.html"><span class="glyphicon glyphicon-search" aria-hidden="true" style="border-right-style:none"></span></a></li>
                                         </ul>
                                 </div>
@@ -123,40 +123,110 @@
             </div>
             </div>
         </header>
-
-    <!---------------------------------------Popup under test---------------------------------------------------------------->
-
-    <div class="modal fade" id="myModal" role="dialog">
+    
+    
+       <!--start popup-->
+    
+       <div class="modal fade" id="razik" role="dialog">
             <div class="modal-dialog">
-
+    
                 <!-- Modal content-->
-                <div class="modal-content" style="background-color:#fff;">
-                    <div class="col-md-12">
+                <div class="modal-content" style="background-color:white;position: relative;top: 90px;">
+                    <div class="modal-body" style="height:800px;">
                         
-                            <input type="button"  id="bt-login"    value="LOGIN" class="bt" style=" background-color: rgb(234, 191, 13); " onclick="log()" >
-                            <input type="button"  id="bt-signin"  value="SIGNIN" class="bt bt1" style="color: rgba(193, 0, 0, 0.9)" onclick="sign()">
-                    </div>
-                    
-                    <div class="modal-body">
-                        <h2 style="" class="pull-right"></h2>
-                        <form class="form-horizontal" action="includes/Signup.Inc.php" method="post" name="myForm" onsubmit="return validateForm()" enctype="multipart/form-data">
-                            <div class="form-group">
+                        <div style="box-shadow: 0px 0px 0px; position:relative;bottom:50px;border-color:transparent;">
+                            <input data-toggle="modal" data-target="#razik2" type="button"  id="bt-login"    value="LOGIN" class="bt" style=" width: 53%; background-color: rgb(234, 191, 13); " onclick="log()" >
+                            <input data-toggle="modal" data-target="#razik" type="button"  id="bt-signin"  value="SIGNUP" class="bt bt1" style="width: 53%;color: rgba(193, 0, 0, 0.9)" onclick="sign()">
+                        </div>
+                        <div class="gang2 center-block" style="background-image:url(assets/img/parts/kaf.png);box-shadow: 0px 0px 0px; margin-top: 200px;margin-bottom: -120px;">
+    
+                        </div>
+                        <div class="form-group">
                                 <div class="col-sm-12">
-                                       
+                                  <input type="phone" class="form-control" placeholder="Full Name" id="phone"  name="phone" style="color: grey; font-size: 18px; background-color:white;margin-top: 20px;box-shadow: 5px 5px 5px #d0d3d7;text-align: center;">
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                            <button type="submit" name="submit" onclick="validateForm" class="btn btn-default pull-left"></button>
+                              </div>
+                              <div class="form-group">
+                                    <div class="col-sm-12">
+                                      <input type="phone" class="form-control" placeholder="User Name" id="phone"  name="phone" style="color: grey; font-size: 18px; background-color:white;margin-top: 20px;box-shadow: 5px 5px 5px #d0d3d7;text-align: center;">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                        <div class="col-sm-12">
+                                          <input type="phone" class="form-control" placeholder="E-mail" id="phone"  name="phone" style="color: grey; font-size: 18px; background-color:white;margin-top: 20px;box-shadow: 5px 5px 5px #d0d3d7;text-align: center;">
                                         </div>
+                                      </div>
+                                      <div class="form-group">
+                                            <div class="col-sm-12">
+                                              <input type="phone" class="form-control" placeholder="Password" id="Password"  name="phone" style="color: grey; font-size: 18px; background-color:white;margin-top: 20px;box-shadow: 5px 5px 5px #d0d3d7;text-align: center;">
+                                            </div>
+                                          </div>
+                                          <div class="form-group">
+                                                <div class="col-sm-12">
+                                                  <input type="phone" class="form-control" placeholder="Phone" id="phone"  name="phone" style="color: grey; font-size: 18px; background-color:white;margin-top: 20px;box-shadow: 5px 5px 5px #d0d3d7;text-align: center;">
+                                                </div>
+                                              </div>
+                    </div>
+                    <div class="modal-footer" style="border-color: rgb(224, 32, 80);">
+                        <form class="form-horizontal" action="#supernova-gang" method="post" name="myForm" onsubmit="return validateForm()" enctype="multipart/form-data">
+                            <div class="pull-right">
+                                      
+                                    <div class="btn-group">
+                                      <button type="button" class="btn btn-default btn-sm" style="text-align: center; font-size:17px; width: 150px;height: 40px;border-radius: 50px;margin-top: 10px; border-color: #c94747;color: #c94747;">Sign up</button>
+                                    </div>
+        
+                                    <!-- /.btn-group -->
+                                  </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="razik2" role="dialog">
+                <div class="modal-dialog">
+        
+                    <!-- Modal content-->
+                    <div class="modal-content" style="background-color:white;position: relative;top: 90px;">
+                        <div class="modal-body" style="height:800px;">
+                            
+                            <div style="box-shadow: 0px 0px 0px; position:relative;bottom:50px;border-color:transparent;">
+                                <input data-toggle="modal" data-target="#razik2" type="button"  id="bt-login"    value="LOGIN" class="bt" style=" width: 53%; background-color: rgb(234, 191, 13); " onclick="log()" >
+                                <input data-toggle="modal" data-target="#razik" type="button"  id="bt-signin"  value="SIGNUP" class="bt bt1" style="width: 53%;color: rgba(193, 0, 0, 0.9)" onclick="sign()">
+                            </div>
+                            <div class="gang2 center-block" style="background-image:url(assets/img/parts/kaf.png);box-shadow: 0px 0px 0px; margin-top: 200px;margin-bottom: -120px;">
+        
+                            </div>
+                            <div class="form-group">
+                                    <div class="col-sm-12">
+                                      <input type="phone" class="form-control" placeholder="Full Name" id="phone"  name="phone" style="color: grey; font-size: 18px; background-color:white;margin-top: 20px;box-shadow: 5px 5px 5px #d0d3d7;text-align: center;">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                        <div class="col-sm-12">
+                                          <input type="phone" class="form-control" placeholder="User Name" id="phone"  name="phone" style="color: grey; font-size: 18px; background-color:white;margin-top: 20px;box-shadow: 5px 5px 5px #d0d3d7;text-align: center;">
+                                        </div>
+                                      </div>
+                                     
+                        </div>
+                        <div class="modal-footer" style="border-color: rgb(224, 32, 80);">
+                            <form class="form-horizontal" action="#supernova-gang" method="post" name="myForm" onsubmit="return validateForm()" enctype="multipart/form-data">
+                                <div class="pull-right">
+                                          
+                                        <div class="btn-group">
+                                          <button type="button" class="btn btn-default btn-sm" style="text-align: center; font-size:17px; width: 150px;height: 40px;border-radius: 50px;margin-top: 10px; border-color: #c94747;color: #c94747;">Sign up</button>
+                                        </div>
+            
+                                        <!-- /.btn-group -->
+                                      </div>
                             </form>
-                            </div>
-                            </div>
-                            </div></div>
-<!---------------------------------------End Popup---------------------------------------------------------------->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        <!--end popup-->
 
-
-
-    <section class="content content-3" id="sec3" style="height: 2200px;">
+    <section class="content content-3" id="sec3" style="">
         <div class="container">
             <div class="row">
                
@@ -173,12 +243,12 @@
             
               <div class="col-md-12">
                     <div class="row">
-                            <a href="take_the_offer.html"><div data-aos="fade-up" data-aos-duration="1500" class="col-md-12" style="cursor: pointer; margin-top: 50px; border:solid; margin-bottom: 50px; border-color: #707070; border-width: 2px; border-left-color: transparent; height: 350px;border-top-left-radius: 50px; border-bottom-left-radius: 50px; border-radius: 100px;">
+                            <a href="take_the_offer.html"><div data-aos="fade-up" data-aos-duration="1500" class="col-md-12 cont-div" style="">
                                     <div class="row">
-                                        <div class="col-md-4 photo" style="border:solid; border-color:transparent; height: 360px;margin-top: -10px; background-image: url(assets/img/parts/testphoto2.png);">
+                                        <div class="col-md-4 photo photo-dis" style="">
                     
                                         </div>
-                                        <div class="col-md-5 infor" style="border:solid; border-color:transparent; height: 300px;">
+                                        <div class="col-md-5 infor cont-des" style="">
                                             <h2>Cardiology Clinic</h2>
                                             <h2 style="">
                                                     <span class="fa fa-star checked"></span>
@@ -196,17 +266,18 @@
                                             </div>
                                             <div class="col-md-3 hidden-sm" style="height: 350px;">
                                                 
-                                                <div class="photo"style="width: 286px; border:solid; border-color:transparent; height: 260px; background-image: url(assets/img/parts/sticker.png); margin-top:-20px; margin-left:-20px;">
-                                                <div style="width: 50px;height: 50px;position: relative;top:18px;left: 43px;">
+                                                <div class="photo photo2-des"style="">
+                                                <div class="fifty" style="">
                                                     <h3>50%</h3>
                                                 </div>
                                                 <br>
-                                                
-                                                <h2><span style="color: white;position: relative; top: 50%;left: 20%;font-size: 40px;">150 SR<small><sup><del><span style="color: rgb(216, 213, 213);">300 SR</span></del></sup></small></span></h2>
-                                                <h4><span style="color: white;position: relative; top: 50%;left: 30%;">You saved 150 SR</span></h4>
+                                                <div class="mop">
+                                                <h2><span class="mop2" style="">150 SR<small><sup><del><span style="color: rgb(216, 213, 213);">300 SR</span></del></sup></small></span></h2>
+                                                <h4><span class="mop3" style="">You saved 150 SR</span></h4>
                                                 </div>
+                                            </div>
                                                 <br>
-                                                <h4 style="text-align: center;font-size: 40px; color: red;"><i class="fa fa-heart" aria-hidden="true"></i></h4>
+                                                <h4 class="heart"style=""><i class="fa fa-heart" aria-hidden="true"></i></h4>
                                                 
                                                       
                                                     
@@ -214,12 +285,12 @@
                                     </div>
                                  </div>
                                  </a>
-                                 <a href="take_the_offer.html"><div class="col-md-12"  style="border:solid; margin-bottom: 50px; border-color: #707070; border-width: 2px; border-left-color: transparent; height: 350px;border-top-left-radius: 50px; border-bottom-left-radius: 50px; border-radius: 100px;">
+                                 <a href="take_the_offer.html"><div data-aos="fade-up" data-aos-duration="1500" class="col-md-12 cont-div" style="">
                                         <div class="row">
-                                            <div class="col-md-4 photo" style="border:solid; border-color:transparent; height: 360px;margin-top: -10px; background-image: url(assets/img/parts/testphoto3.png);">
+                                            <div class="col-md-4 photo photo-dis" style="">
                         
                                             </div>
-                                            <div class="col-md-5 infor" style="border:solid; border-color:transparent; height: 300px;">
+                                            <div class="col-md-5 infor cont-des" style="">
                                                 <h2>Cardiology Clinic</h2>
                                                 <h2 style="">
                                                         <span class="fa fa-star checked"></span>
@@ -237,17 +308,18 @@
                                                 </div>
                                                 <div class="col-md-3 hidden-sm" style="height: 350px;">
                                                     
-                                                    <div class="photo"style="width: 286px; border:solid; border-color:transparent; height: 260px; background-image: url(assets/img/parts/sticker.png); margin-top:-20px; margin-left:-20px;">
-                                                    <div style="width: 50px;height: 50px;position: relative;top:18px;left: 43px;">
+                                                    <div class="photo photo2-des"style="">
+                                                    <div class="fifty" style="">
                                                         <h3>50%</h3>
                                                     </div>
                                                     <br>
-                                                    
-                                                    <h2><span style="color: white;position: relative; top: 50%;left: 20%;font-size: 40px;">150 SR<small><sup><del><span style="color: rgb(216, 213, 213);">300 SR</span></del></sup></small></span></h2>
-                                                    <h4><span style="color: white;position: relative; top: 50%;left: 30%;">You saved 150 SR</span></h4>
+                                                    <div class="mop">
+                                                    <h2><span class="mop2" style="">150 SR<small><sup><del><span style="color: rgb(216, 213, 213);">300 SR</span></del></sup></small></span></h2>
+                                                    <h4><span class="mop3" style="">You saved 150 SR</span></h4>
                                                     </div>
+                                                </div>
                                                     <br>
-                                                    <h4 style="text-align: center;font-size: 40px; color: red;"><i class="fa fa-heart" aria-hidden="true"></i></h4>
+                                                    <h4 class="heart"style=""><i class="fa fa-heart" aria-hidden="true"></i></h4>
                                                     
                                                           
                                                         
@@ -255,12 +327,12 @@
                                         </div>
                                      </div>
                                      </a>
-                                     <a href="take_the_offer.html"><div data-aos="fade-up" data-aos-duration="1500" class="col-md-12" style="cursor: pointer; border:solid; margin-bottom: 50px; border-color: #707070; border-width: 2px; border-left-color: transparent; height: 350px;border-top-left-radius: 50px; border-bottom-left-radius: 50px; border-radius: 100px;">
+                                     <a href="take_the_offer.html"><div data-aos="fade-up" data-aos-duration="1500" class="col-md-12 cont-div" style="">
                                             <div class="row">
-                                                <div class="col-md-4 photo" style="border:solid; border-color:transparent; height: 360px;margin-top: -10px; background-image: url(assets/img/parts/testphoto2.png);">
+                                                <div class="col-md-4 photo photo-dis" style="">
                             
                                                 </div>
-                                                <div class="col-md-5 infor" style="border:solid; border-color:transparent; height: 300px;">
+                                                <div class="col-md-5 infor cont-des" style="">
                                                     <h2>Cardiology Clinic</h2>
                                                     <h2 style="">
                                                             <span class="fa fa-star checked"></span>
@@ -278,17 +350,18 @@
                                                     </div>
                                                     <div class="col-md-3 hidden-sm" style="height: 350px;">
                                                         
-                                                        <div class="photo"style="width: 286px; border:solid; border-color:transparent; height: 260px; background-image: url(assets/img/parts/sticker.png); margin-top:-20px; margin-left:-20px;">
-                                                        <div style="width: 50px;height: 50px;position: relative;top:18px;left: 43px;">
+                                                        <div class="photo photo2-des"style="">
+                                                        <div class="fifty" style="">
                                                             <h3>50%</h3>
                                                         </div>
                                                         <br>
-                                                        
-                                                        <h2><span style="color: white;position: relative; top: 50%;left: 20%;font-size: 40px;">150 SR<small><sup><del><span style="color: rgb(216, 213, 213);">300 SR</span></del></sup></small></span></h2>
-                                                        <h4><span style="color: white;position: relative; top: 50%;left: 30%;">You saved 150 SR</span></h4>
+                                                        <div class="mop">
+                                                        <h2><span class="mop2" style="">150 SR<small><sup><del><span style="color: rgb(216, 213, 213);">300 SR</span></del></sup></small></span></h2>
+                                                        <h4><span class="mop3" style="">You saved 150 SR</span></h4>
                                                         </div>
+                                                    </div>
                                                         <br>
-                                                        <h4 style="text-align: center;font-size: 40px; color: red;"><i class="fa fa-heart" aria-hidden="true"></i></h4>
+                                                        <h4 class="heart"style=""><i class="fa fa-heart" aria-hidden="true"></i></h4>
                                                         
                                                               
                                                             
@@ -296,12 +369,12 @@
                                             </div>
                                          </div>
                                          </a>
-                                         <a href="take_the_offer.html"><div data-aos="fade-up" data-aos-duration="1500" class="col-md-12"  style="border:solid; margin-bottom: 50px; border-color: #707070; border-width: 2px; border-left-color: transparent; height: 350px;border-top-left-radius: 50px; border-bottom-left-radius: 50px; border-radius: 100px;">
+                                         <a href="take_the_offer.html"><div data-aos="fade-up" data-aos-duration="1500" class="col-md-12 cont-div" style="">
                                                 <div class="row">
-                                                    <div class="col-md-4 photo" style="border:solid; border-color:transparent; height: 360px;margin-top: -10px; background-image: url(assets/img/parts/testphoto3.png);">
+                                                    <div class="col-md-4 photo photo-dis" style="">
                                 
                                                     </div>
-                                                    <div class="col-md-5 infor" style="border:solid; border-color:transparent; height: 300px;">
+                                                    <div class="col-md-5 infor cont-des" style="">
                                                         <h2>Cardiology Clinic</h2>
                                                         <h2 style="">
                                                                 <span class="fa fa-star checked"></span>
@@ -319,17 +392,18 @@
                                                         </div>
                                                         <div class="col-md-3 hidden-sm" style="height: 350px;">
                                                             
-                                                            <div class="photo"style="width: 286px; border:solid; border-color:transparent; height: 260px; background-image: url(assets/img/parts/sticker.png); margin-top:-20px; margin-left:-20px;">
-                                                            <div style="width: 50px;height: 50px;position: relative;top:18px;left: 43px;">
+                                                            <div class="photo photo2-des"style="">
+                                                            <div class="fifty" style="">
                                                                 <h3>50%</h3>
                                                             </div>
                                                             <br>
-                                                            
-                                                            <h2><span style="color: white;position: relative; top: 50%;left: 20%;font-size: 40px;">150 SR<small><sup><del><span style="color: rgb(216, 213, 213);">300 SR</span></del></sup></small></span></h2>
-                                                            <h4><span style="color: white;position: relative; top: 50%;left: 30%;">You saved 150 SR</span></h4>
+                                                            <div class="mop">
+                                                            <h2><span class="mop2" style="">150 SR<small><sup><del><span style="color: rgb(216, 213, 213);">300 SR</span></del></sup></small></span></h2>
+                                                            <h4><span class="mop3" style="">You saved 150 SR</span></h4>
                                                             </div>
+                                                        </div>
                                                             <br>
-                                                            <h4 style="text-align: center;font-size: 40px; color: red;"><i class="fa fa-heart" aria-hidden="true"></i></h4>
+                                                            <h4 class="heart"style=""><i class="fa fa-heart" aria-hidden="true"></i></h4>
                                                             
                                                                   
                                                                 
@@ -337,12 +411,12 @@
                                                 </div>
                                              </div>
                                              </a>
-                                             <a href="take_the_offer.html"><div data-aos="fade-up" data-aos-duration="1500" class="col-md-12" style="cursor: pointer; border:solid; margin-bottom: 50px; border-color: #707070; border-width: 2px; border-left-color: transparent; height: 350px;border-top-left-radius: 50px; border-bottom-left-radius: 50px; border-radius: 100px;">
+                                             <a href="take_the_offer.html"><div data-aos="fade-up" data-aos-duration="1500" class="col-md-12 cont-div" style="">
                                                     <div class="row">
-                                                        <div class="col-md-4 photo" style="border:solid; border-color:transparent; height: 360px;margin-top: -10px; background-image: url(assets/img/parts/testphoto2.png);">
+                                                        <div class="col-md-4 photo photo-dis" style="">
                                     
                                                         </div>
-                                                        <div class="col-md-5 infor" style="border:solid; border-color:transparent; height: 300px;">
+                                                        <div class="col-md-5 infor cont-des" style="">
                                                             <h2>Cardiology Clinic</h2>
                                                             <h2 style="">
                                                                     <span class="fa fa-star checked"></span>
@@ -360,17 +434,18 @@
                                                             </div>
                                                             <div class="col-md-3 hidden-sm" style="height: 350px;">
                                                                 
-                                                                <div class="photo"style="width: 286px; border:solid; border-color:transparent; height: 260px; background-image: url(assets/img/parts/sticker.png); margin-top:-20px; margin-left:-20px;">
-                                                                <div style="width: 50px;height: 50px;position: relative;top:18px;left: 43px;">
+                                                                <div class="photo photo2-des"style="">
+                                                                <div class="fifty" style="">
                                                                     <h3>50%</h3>
                                                                 </div>
                                                                 <br>
-                                                                
-                                                                <h2><span style="color: white;position: relative; top: 50%;left: 20%;font-size: 40px;">150 SR<small><sup><del><span style="color: rgb(216, 213, 213);">300 SR</span></del></sup></small></span></h2>
-                                                                <h4><span style="color: white;position: relative; top: 50%;left: 30%;">You saved 150 SR</span></h4>
+                                                                <div class="mop">
+                                                                <h2><span class="mop2" style="">150 SR<small><sup><del><span style="color: rgb(216, 213, 213);">300 SR</span></del></sup></small></span></h2>
+                                                                <h4><span class="mop3" style="">You saved 150 SR</span></h4>
                                                                 </div>
+                                                            </div>
                                                                 <br>
-                                                                <h4 style="text-align: center;font-size: 40px; color: red;"><i class="fa fa-heart" aria-hidden="true"></i></h4>
+                                                                <h4 class="heart"style=""><i class="fa fa-heart" aria-hidden="true"></i></h4>
                                                                 
                                                                       
                                                                     
@@ -378,6 +453,48 @@
                                                     </div>
                                                  </div>
                                                  </a>
+                                                 <a href="take_the_offer.html"><div data-aos="fade-up" data-aos-duration="1500" class="col-md-12 cont-div" style="">
+                                                        <div class="row">
+                                                            <div class="col-md-4 photo photo-dis" style="">
+                                        
+                                                            </div>
+                                                            <div class="col-md-5 infor cont-des" style="">
+                                                                <h2>Cardiology Clinic</h2>
+                                                                <h2 style="">
+                                                                        <span class="fa fa-star checked"></span>
+                                                                        <span class="fa fa-star checked"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span style="font-size: 15px;">(+320)</span>
+                                                                    </h2>
+                                                                    <h4><i class="fa fa-hospital-o" aria-hidden="true"></i>&nbsp; &nbsp;International Medical Hospital</h4>
+                                                                    <br>
+                                                                    <h4><span style="color: #c94747;"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; &nbsp;Street 12,Riyadh (1.2m)</span></h4>
+                                                                    <h4><span style="color: #c94747;"><i class="fa fa-phone" aria-hidden="true"></i></span>&nbsp; &nbsp;(+20)1551196969</h4>
+                                                                    <h4><span style="color: #c94747;"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>&nbsp; &nbsp;izome.kon@KAF.com</h4>
+                                                                    <h4><span style="color: #c94747;"><i class="fa fa-clock-o" aria-hidden="true"></i></span>&nbsp; &nbsp;12:00 PM - 12:00 AM</h4>
+                                                                </div>
+                                                                <div class="col-md-3 hidden-sm" style="height: 350px;">
+                                                                    
+                                                                    <div class="photo photo2-des"style="">
+                                                                    <div class="fifty" style="">
+                                                                        <h3>50%</h3>
+                                                                    </div>
+                                                                    <br>
+                                                                    <div class="mop">
+                                                                    <h2><span class="mop2" style="">150 SR<small><sup><del><span style="color: rgb(216, 213, 213);">300 SR</span></del></sup></small></span></h2>
+                                                                    <h4><span class="mop3" style="">You saved 150 SR</span></h4>
+                                                                    </div>
+                                                                </div>
+                                                                    <br>
+                                                                    <h4 class="heart"style=""><i class="fa fa-heart" aria-hidden="true"></i></h4>
+                                                                    
+                                                                          
+                                                                        
+                                                                </div>
+                                                        </div>
+                                                     </div>
+                                                     </a>
                                                    
                                  
                     </div>

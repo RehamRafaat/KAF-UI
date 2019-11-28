@@ -45,48 +45,146 @@
 <body>
     <!-- Header -->
     <header id="home">
-        <div class="">
-            <div onscroll="myFunction()" class="header-content">
-                <div class="header-content-inner">
-                    <nav class="navbar navbar-default navbar-fixed-top">
-                        <div class="container-fluid">
-                            <!-- Brand and toggle get grouped for better mobile display -->
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                                <a class="navbar-brand" href="#"><img src="assets/img/parts/logo.png"/></a>
+            <div class="">
+                <div onscroll="myFunction()" class="header-content">
+                    <div class="header-content-inner">
+                        <nav class="navbar navbar-default navbar-fixed-top">
+                            <div class="container-fluid">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#"><img src="assets/img/parts/logo.png"/></a>
+                                </div>
+                                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                                <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                                                <li><a href="offers.html">Offers</a></li>
+                                                <li><a href="knowledge.html">Knowledge</a></li>
+                                                <li><a href="support.html">Support</a></li>
+                                                <li><a href="contact_us.html">Contact Us</a></li>
+                                            <li><a data-toggle="modal" data-target="#razik2" ><span class="glyphicon glyphicon-user" aria-hidden="true" style="border-right-style:none"></span>Login</a></li>
+                                            <li><a><button data-toggle="modal" data-target="#razik" class=" btn btn-default">Sign up</button></a></li>
+                                            <li><a href="search.html"><span class="glyphicon glyphicon-search" aria-hidden="true" style="border-right-style:none"></span></a></li>
+                                        </ul>
+                                </div>
+        
+                                </ul>
                             </div>
-                            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-                                    <ul class="nav navbar-nav">
-                                            <li class="active"><a href="index_Arabic.html">الرئيسية<span class="sr-only">(current)</span></a></li>
-                                            <li><a href="offers_Arabic.html">عروض</a></li>
-                                            <li><a href="knowledge_Arabic.html">المعرفة</a></li>
-                                            <li><a href="support_Arabic.html">المساعدة</a></li>
-                                            <li><a href="contact_us_Arabic.html">تواصل معنا</a></li>
-                                        <li><a href="#about"><span class="glyphicon glyphicon-user" aria-hidden="true" style="border-right-style:none"></span>الدخول</a></li>
-                                        <li><a><button data-toggle="modal" data-target="#myModal" class=" btn btn-default">التسجيل</button></a></li>
-                                        <li><a href="#about"><span class="glyphicon glyphicon-search" aria-hidden="true" style="border-right-style:none"></span></a></li>
-                                    </ul>
-                            </div>
-    
-                            </ul>
-                        </div>
-                        <!-- /.navbar-collapse -->
+                            <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                    </nav>
                 </div>
-                <!-- /.container-fluid -->
-                </nav>
+            </div>
+            </div>
+        </header>
+    
+    
+       <!--start popup-->
+    
+       <div class="modal fade" id="razik" role="dialog">
+            <div class="modal-dialog">
+    
+                <!-- Modal content-->
+                <div class="modal-content" style="background-color:white;position: relative;top: 90px;">
+                    <div class="modal-body" style="height:800px;">
+                        
+                        <div style="box-shadow: 0px 0px 0px; position:relative;bottom:50px;border-color:transparent;">
+                            <input data-toggle="modal" data-target="#razik2" type="button"  id="bt-login"    value="LOGIN" class="bt" style=" width: 53%; background-color: rgb(234, 191, 13); " onclick="log()" >
+                            <input data-toggle="modal" data-target="#razik" type="button"  id="bt-signin"  value="SIGNUP" class="bt bt1" style="width: 53%;color: rgba(193, 0, 0, 0.9)" onclick="sign()">
+                        </div>
+                        <div class="gang2 center-block" style="background-image:url(assets/img/parts/kaf.png);box-shadow: 0px 0px 0px; margin-top: 200px;margin-bottom: -120px;">
+    
+                        </div>
+                        <div class="form-group">
+                                <div class="col-sm-12">
+                                  <input type="phone" class="form-control" placeholder="Full Name" id="phone"  name="phone" style="color: grey; font-size: 18px; background-color:white;margin-top: 20px;box-shadow: 5px 5px 5px #d0d3d7;text-align: center;">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                    <div class="col-sm-12">
+                                      <input type="phone" class="form-control" placeholder="User Name" id="phone"  name="phone" style="color: grey; font-size: 18px; background-color:white;margin-top: 20px;box-shadow: 5px 5px 5px #d0d3d7;text-align: center;">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                        <div class="col-sm-12">
+                                          <input type="phone" class="form-control" placeholder="E-mail" id="phone"  name="phone" style="color: grey; font-size: 18px; background-color:white;margin-top: 20px;box-shadow: 5px 5px 5px #d0d3d7;text-align: center;">
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                            <div class="col-sm-12">
+                                              <input type="phone" class="form-control" placeholder="Password" id="Password"  name="phone" style="color: grey; font-size: 18px; background-color:white;margin-top: 20px;box-shadow: 5px 5px 5px #d0d3d7;text-align: center;">
+                                            </div>
+                                          </div>
+                                          <div class="form-group">
+                                                <div class="col-sm-12">
+                                                  <input type="phone" class="form-control" placeholder="Phone" id="phone"  name="phone" style="color: grey; font-size: 18px; background-color:white;margin-top: 20px;box-shadow: 5px 5px 5px #d0d3d7;text-align: center;">
+                                                </div>
+                                              </div>
+                    </div>
+                    <div class="modal-footer" style="border-color: rgb(224, 32, 80);">
+                        <form class="form-horizontal" action="#supernova-gang" method="post" name="myForm" onsubmit="return validateForm()" enctype="multipart/form-data">
+                            <div class="pull-right">
+                                      
+                                    <div class="btn-group">
+                                      <button type="button" class="btn btn-default btn-sm" style="text-align: center; font-size:17px; width: 150px;height: 40px;border-radius: 50px;margin-top: 10px; border-color: #c94747;color: #c94747;">Sign up</button>
+                                    </div>
+        
+                                    <!-- /.btn-group -->
+                                  </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-    </header>
-
-
-    <!---------------------------------------Popup under test---------------------------------------------------------------->
-
+        <div class="modal fade" id="razik2" role="dialog">
+                <div class="modal-dialog">
+        
+                    <!-- Modal content-->
+                    <div class="modal-content" style="background-color:white;position: relative;top: 90px;">
+                        <div class="modal-body" style="height:800px;">
+                            
+                            <div style="box-shadow: 0px 0px 0px; position:relative;bottom:50px;border-color:transparent;">
+                                <input data-toggle="modal" data-target="#razik2" type="button"  id="bt-login"    value="LOGIN" class="bt" style=" width: 53%; background-color: rgb(234, 191, 13); " onclick="log()" >
+                                <input data-toggle="modal" data-target="#razik" type="button"  id="bt-signin"  value="SIGNUP" class="bt bt1" style="width: 53%;color: rgba(193, 0, 0, 0.9)" onclick="sign()">
+                            </div>
+                            <div class="gang2 center-block" style="background-image:url(assets/img/parts/kaf.png);box-shadow: 0px 0px 0px; margin-top: 200px;margin-bottom: -120px;">
+        
+                            </div>
+                            <div class="form-group">
+                                    <div class="col-sm-12">
+                                      <input type="phone" class="form-control" placeholder="Full Name" id="phone"  name="phone" style="color: grey; font-size: 18px; background-color:white;margin-top: 20px;box-shadow: 5px 5px 5px #d0d3d7;text-align: center;">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                        <div class="col-sm-12">
+                                          <input type="phone" class="form-control" placeholder="User Name" id="phone"  name="phone" style="color: grey; font-size: 18px; background-color:white;margin-top: 20px;box-shadow: 5px 5px 5px #d0d3d7;text-align: center;">
+                                        </div>
+                                      </div>
+                                     
+                        </div>
+                        <div class="modal-footer" style="border-color: rgb(224, 32, 80);">
+                            <form class="form-horizontal" action="#supernova-gang" method="post" name="myForm" onsubmit="return validateForm()" enctype="multipart/form-data">
+                                <div class="pull-right">
+                                          
+                                        <div class="btn-group">
+                                          <button type="button" class="btn btn-default btn-sm" style="text-align: center; font-size:17px; width: 150px;height: 40px;border-radius: 50px;margin-top: 10px; border-color: #c94747;color: #c94747;">Sign up</button>
+                                        </div>
+            
+                                        <!-- /.btn-group -->
+                                      </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        <!--end popup-->
     <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
 
