@@ -83,6 +83,9 @@
       #sec3 .para{
           margin-top: -20px;
       }
+     #no-care{
+        display: none;
+    }
 }
 @media only screen and (min-width: 800px) {
     #sec3{
@@ -90,5 +93,17 @@
      }
     #sec3 h4{
         margin-left: 50px;
+    }
+    #sec3 #k{
+        float: right;
+        margin-right: 50px;
+    }
+    #sec3 #kh{
+        position: relative;
+        bottom: 70px;
+    }
+    #k3{
+        position: relative;
+        bottom: 70px;
     }
 }
